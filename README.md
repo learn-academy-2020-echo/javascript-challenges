@@ -4,7 +4,7 @@
 
 - Branch: `topic-partner1-partner2`
 - Project (folder): `project-partner1-partner2`
-- Challenge (file): `challengeName-partner1-partner2.rb`
+- Challenge (file): `challengeName-partner1-partner2.js`
 
 ## Merging Branches in AM
 
