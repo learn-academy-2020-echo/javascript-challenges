@@ -1,3 +1,0 @@
-// Hey Andee!
-
-// Hello, Rachael!!! 
