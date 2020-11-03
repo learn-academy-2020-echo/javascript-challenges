@@ -77,7 +77,28 @@ if(hungry) {
 
 // Write an if/else statement that takes a variable of trafficLight and logs "go" if the light is green, "slow down" if the light is yellow and "stop" if the light is red.
 
+var trafficLight = "blue"
+if(trafficLight === "green" ) {
+    console.log("go");
+} else if(trafficLight === "yellow") {
+    console.log("slow down");
+} else if(trafficLight === "red") {
+    console.log("stop");
+} else {
+    console.log("something went wrong");
+}
 // Write an if/else statement that takes two variables of numbers and outputs the larger number, or logs equal if the numbers are the same.
+var numOne = 8
+var numTwo = 4
+
+
+if (numOne === numTwo) { 
+    console.log("equal");
+    
+} else {
+    console.log(Math.max(numOne, numTwo));
+}
+
 
 // Write an if/else statement that takes a variable of a number and logs whether the number is odd, even, or zero.
 
