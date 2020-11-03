@@ -9,3 +9,11 @@ console.log(56*23);
 console.log(46/5);
 console.log(5^7);
 console.log(33%6);
+
+// swtich to ryan
+var catName = "Ryan"
+console.log(catName.length)
+console.log(catName === "e")
+console.log((34/3) > (67/2));
+console.log(5 == "5");
+console.log(5 === "5");
