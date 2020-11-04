@@ -56,3 +56,32 @@ else if (password.length >= 8 || password.includes("!")) {
 else {console.log("That is not a valid password");
 
 }
+
+// Array Challenges
+  var groceryList = ["chips", "dip", "cookies"]
+  groceryList.push("soda")
+  console.log(groceryList);
+
+  var groceryList2 = ["granola"]
+  var groceryList3 = groceryList.concat(groceryList2)
+  console.log(groceryList3)
+
+
+  var numbers = [2, 4, 6, 8, 10]
+  numbers.unshift(0)
+  console.log(numbers);
+
+  numbers.push(12)
+  console.log(numbers);
+
+  numbers.shift()
+  console.log(numbers);
+
+  let numbers1 = [0]
+  let numbers3 = numbers1.concat(numbers)
+  console.log(numbers3);
+
+  var numSet = [2, 13, 6, 8, 4, 2]
+  console.log(numSet.indexOf(2));
+
+  console.log(numSet.lastIndexOf(2));
