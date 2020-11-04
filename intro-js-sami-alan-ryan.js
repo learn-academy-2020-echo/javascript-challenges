@@ -73,12 +73,30 @@
   // groceryList.push("granola")
   // console.log(groceryList);
 
-   var numbers = [2, 4, 6, 8, 10]
-   numbers.unshift(0)
-   console.log(numbers);
-   numbers.push(12)
-console.log(numbers);
-  numbers.shift()
-  console.log(numbers);
-var numbers2 = [0]
-  console.log(numbers2.concat(numbers));
+//    var numbers = [2, 4, 6, 8, 10]
+//    numbers.unshift(0)
+//    console.log(numbers);
+//    numbers.push(12)
+// console.log(numbers);
+//   numbers.shift()
+//   console.log(numbers);
+// var numbers2 = [0]
+//   console.log(numbers2.concat(numbers));
+
+
+// var numSet = [2, 13, 6, 8, 4, 2]
+
+// console.log(numSet.lastIndexOf(2))
+
+var chars = ["y", "a", "r", "r", "a"]
+
+var charsReversed = chars.reverse();
+
+console.log(charsReversed);
+console.log(chars.join("-"));
+console.log(chars.join(""));
+
+
+
+
+
