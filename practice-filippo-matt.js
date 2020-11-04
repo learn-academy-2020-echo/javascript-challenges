@@ -33,15 +33,61 @@
 //     console.log("you spent too much")
 // }
 
-// Write an if/else statement that takes a variable of hungry and logs "eat food" 
-// if you are hungry and "keep coding" if you are not hungry.
+// Write an if/else statement that takes a variable of hungry and logs "eat food" if you are hungry and "keep coding" if you are not hungry.
+//
+// var hungry = false
+//
+// if(hungry === true) {
+//   console.log("Eat food.")
+// }
+//  else {
+//   console.log("Keep coding.")
+//
+// }
+//
+// Write an if/else statement that takes a variable of trafficLight and logs "go" if the light is green, "slow down" if the light is yellow and "stop" if the light is red.
 
-var hungry
-var hungry=false
+// var trafficLight = "yellow"
+// // var trafficLight2 = "yellow"
+// // var trafficLight3 = "red"
+//
+// if(trafficLight === "green"){
+//   console.log("go")
+// }
+// else if (trafficLight === "yellow") {
+//     console.log("Slow down")
+// }
+// else if (trafficLight === "red")
+//     console.log("stop");
+// else {
+//   console.log("Crashed")
+// }
+//
+// Write an if/else statement that takes two variables of numbers and outputs the larger number, or logs equal if the numbers are the same.
+//
+// var number1 = 50
+// var number2 = 50
+//
+// if (number1 > number2) {
+//   console.log(number1);
+// }
+// else if (number1 < number2) {
+//   console.log(number2);
+// }
+// else {
+//   console.log("equals");
+// }
 
-if(hungry=true) {
-    console.log("eat food")
-} else {
-    console.log("keep coding")
+// Write an if/else statement that takes a variable of a number and logs whether the number is odd, even, or zero.
+
+var number = 83
+
+if (number%2 === 0) {
+    console.log("even");
 }
-
+else if (number%2 === 1) {
+    console.log("odd");
+}
+else {
+  console.log("zero");
+}
