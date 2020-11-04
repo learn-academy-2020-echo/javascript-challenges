@@ -49,3 +49,5 @@ const findTheAs = (arr) => {
     return arrayOfAs
 }
 console.log(findTheAs(wordArray));
+
+// hello!!!
