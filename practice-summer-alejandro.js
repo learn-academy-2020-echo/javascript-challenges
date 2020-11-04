@@ -90,5 +90,8 @@ else {console.log("That is not a valid password");
 
    var chars = ["y", "a", "r", "r", "a"]
 
-   var chars2 = chars.join("")
-   console.log(chars2)
+   // var chars2 = chars.join("")
+   // console.log(chars2)
+
+var charsReversed = chars.reverse()
+console.log(charsReversed);
