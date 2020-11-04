@@ -18,10 +18,19 @@ if (num1 > num2){
   console.log("equal");
 }
 
-let myVariable = "hello world"
-if (typeof myVariable = "boolean" || "number" || "string")
-{
-  console.log (typeof myVariable)
-} else {
-  console.log("none");
+// let myVariable = "hello world"
+// if (typeof myVariable = "boolean" || "number" || "string")
+// {
+//   console.log (typeof myVariable)
+// } else {
+//   console.log("none");
+// }
+
+let grade = 100%
+if (grade === 100%){
+  console.log("perfect score");
+} else if (100% < grade <= 90%) {
+  console.log("A");
+} else if (100% < grade <= 90%) {
+  console.log("A");
 }
