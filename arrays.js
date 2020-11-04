@@ -14,8 +14,11 @@ var compList = groceryList.concat(newItem)
 console.log(compList);
 
 // Consider this variable:
-//   var numbers = [2, 4, 6, 8, 10]
+var numbers = [2, 4, 6, 8, 10]
+
 // Write the code that will add the number 0 to the beginning of the array.
+
+
 
 // Write the code that will add the number 12 to the end of the array.
 
