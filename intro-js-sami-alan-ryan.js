@@ -56,11 +56,29 @@
 // if (number<number2){console.log(number2)
 //   }else{console.log(number)}
 
-var Grade = 100
-if (Grade>=100){console.log("You got an perfect score")
-} else if (90<Grade<99){console.log("You got an A")
-} else if (80<Grade<89){console.log("You got a B")
-} else if (70<Grade<79){console.log("You got a C")
-} else if (60<Grade<69){console.log("You got a D")
-} else if (Grade=0){console.log("No Score Availible")
-} else {console.log("You got An F")}
+// var Grade = 100
+// if (Grade>=100){console.log("You got an perfect score")
+// } else if (90<Grade<99){console.log("You got an A")
+// } else if (80<Grade<89){console.log("You got a B")
+// } else if (70<Grade<79){console.log("You got a C")
+// } else if (60<Grade<69){console.log("You got a D")
+// } else if (Grade=0){console.log("No Score Availible")
+// } else {console.log("You got An F")}
+
+  // var groceryList = ["chips", "dip", "cookies"]
+  //
+  // groceryList.push("soda")
+  // console.log(groceryList);
+  //
+  // groceryList.push("granola")
+  // console.log(groceryList);
+
+   var numbers = [2, 4, 6, 8, 10]
+   numbers.unshift(0)
+   console.log(numbers);
+   numbers.push(12)
+console.log(numbers);
+  numbers.shift()
+  console.log(numbers);
+var numbers2 = [0]
+  console.log(numbers2.concat(numbers));
