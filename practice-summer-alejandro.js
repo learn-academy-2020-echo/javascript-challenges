@@ -85,3 +85,10 @@ else {console.log("That is not a valid password");
   console.log(numSet.indexOf(2));
 
   console.log(numSet.lastIndexOf(2));
+
+
+
+   var chars = ["y", "a", "r", "r", "a"]
+
+   var chars2 = chars.join("")
+   console.log(chars2)
