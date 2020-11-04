@@ -25,3 +25,34 @@ console.log(favNum / otherNum)
 var string = "string"
 console.log(string.length);
 console.log(string.charAt(3))
+
+
+
+//Conditonals Practice
+
+var price = 150
+
+if(price <= 100) {
+  console.log("In budget");
+} else {console.log("You broke");
+}
+
+var number = 41
+if(number % 2 === 0){
+  console.log("It's even")
+} else {console.log("It ain't even")
+}
+
+
+
+var password = "123665436523423!"
+
+if (password.length >= 12 && password.includes("!")) {
+  console.log("Thats a mighty strong password")
+}
+else if (password.length >= 8 || password.includes("!")) {
+  console.log("This password is strong enough");
+}
+else {console.log("That is not a valid password");
+
+}
