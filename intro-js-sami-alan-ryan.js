@@ -39,15 +39,28 @@
 // }
 
 
-var trafficLight = "joiewajoi"
+// var trafficLight = "joiewajoi"
+//
+// if (trafficLight === "green"){
+//     console.log("go")
+// }else if (trafficLight === "yellow"){
+//     console.log("slow down")
+// }else if (trafficLight === "red"){
+//     console.log("stop")
+// }else{
+//     console.log("you're probably not driving")
+// }
 
-if (trafficLight === "green"){
-    console.log("go")
-}else if (trafficLight === "yellow"){
-    console.log("slow down")
-}else if (trafficLight === "red"){
-    console.log("stop")
-}else{
-    console.log("you're probably not driving")
-}
+// var number = 100
+// var number2 = 200
+// if (number<number2){console.log(number2)
+//   }else{console.log(number)}
 
+var Grade = 100
+if (Grade>=100){console.log("You got an perfect score")
+} else if (90<Grade<99){console.log("You got an A")
+} else if (80<Grade<89){console.log("You got a B")
+} else if (70<Grade<79){console.log("You got a C")
+} else if (60<Grade<69){console.log("You got a D")
+} else if (Grade=0){console.log("No Score Availible")
+} else {console.log("You got An F")}
