@@ -38,16 +38,49 @@
 //     }
 // }
 
-var wordArray = ["Beans", "Apple", "Cat", "Alien", "Door"]
-const findTheAs = (arr) => {
-    let arrayOfAs = []
-    for(let i = 0; i < arr.length; i++) {
-        if(arr[i].charAt(0) === "A") {
-            arrayOfAs.push(arr[i])
-        }
-    }
-    return arrayOfAs
-}
-console.log(findTheAs(wordArray));
+// var wordArray = ["Beans", "Apple", "Cat", "Alien", "Door"]
+// const findTheAs = (arr) => {
+//     let arrayOfAs = []
+//     for(let i = 0; i < arr.length; i++) {
+//         if(arr[i].charAt(0) === "A") {
+//             arrayOfAs.push(arr[i])
+//         }
+//     }
+//     return arrayOfAs
+// }
+// console.log(findTheAs(wordArray));
 
 // hello!!!
+
+// const marco = () => {
+//     return "polo"
+// }
+
+// console.log(marco());
+
+// const greeting = (name) => {
+//     return `Welcome ${ name }`
+// }
+
+// console.log(greeting("Bob"));
+
+// const oddOrEven = (num) => {
+//     if(num % 2 == 0){
+//         return "even"
+//     }else{
+//         return "odd"
+//     }
+// }
+
+// console.log(oddOrEven(5));
+
+
+// const triple = (num) => {
+//     return num * 3
+// }
+
+// console.log(triple(2));
+
+// const multiply = (num1, num2) => {
+//     return num1 * num2
+
