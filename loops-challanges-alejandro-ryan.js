@@ -117,7 +117,7 @@ console.log(divisibleBy(10,3));
 
 const assignGrade = (grade) => {
   //must create if statments to differenitate between letter grades
-  //must set ranges
+  //must set ranges and make sure to close your if with an else
   if(grade >= 90){
     return "You got an A"
   } else if (grade >= 80 && grade < 90) {
@@ -137,3 +137,25 @@ console.log(assignGrade(70));
 console.log(assignGrade(66));
 console.log(assignGrade(3));
 console.log(assignGrade(1000));
+
+/* some strech challanges completed last night
+DM me the secret code of "Pineapples" if you end up seeing this secret note :) */
+
+//What number's bigger: Write a function named greaterNum that takes 2 arguments, both numbers and returns whichever number is the greater (higher) number
+const greaterNum = (num1, num2) => {
+  //must create and if/else statement for both outcomes
+  if(num1>num2){
+    return num1
+  }else(num1<num2)
+    return num2
+  }
+/*I am starting to catch my mistakes before I write them, i seem to add
+a lot of extra curly braces for no reason XD */
+console.log(greaterNum(10,5));
+console.log(greaterNum(15,800));
+
+//The World Translator: Write a function named helloWorld that takes 1 argument, a language code (e.g. "es", "de", "en") and returns "Hello, World" for the given language, for at least 3 languages (it should default to returning English)
+
+const helloWorld = (Nederlands) => {
+  
+}
