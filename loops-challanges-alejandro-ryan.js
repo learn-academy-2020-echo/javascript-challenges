@@ -44,54 +44,96 @@ rock :) */
 // } 
 // console.log(low);
 
-
-//Write a function named marco that returns "polo".
-const marco = () => {
-  return "Polo!"
-}
-//dont forget to use console.log(); to recieve a message in terminal
-console.log(marco());
-
-/*write a function named greeting that takes a name as an argument
-and returns "Welcome, <person's name here>!" */
-//write your constants
-const greeting = (name1) => {
-  //return the persons name
-  return ` "Welcome, ${name1}!" `
-}
-//Give greeting names to use as console.log();
-console.log(greeting("Ryan"));
-console.log(greeting("Alejandro"));
-
-// Write a function named oddOrEven that takes a number as an argument and returns whether the number is odd or even.
-const oddOrEven = (num) => {
-  // if statement to say if it is to say even
-  // else statement to say if is odd
-  if(num % 2 === 0){
-    return "Even"
-  } else
-  return "Odd"
-}
-console.log(oddOrEven(42));
-console.log(oddOrEven(69));
-
-//Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
-const triple = (num) => {
-  //multiple the return by 3
-  return (num * 3)
-}
-console.log(triple(4));
-
-//Write a function named multiply that takes two numbers as arguments and returns the result of one of the numbers multiplied by the other.
-
-const multiply = (num1, num2) => {
-  //these two arguments need to be multiplied by eachother
-  return num1 * num2
-}
-console.log(multiply(4,4));
+//
+// //Write a function named marco that returns "polo".
+// const marco = () => {
+//   return "Polo!"
+// }
+// //dont forget to use console.log(); to recieve a message in terminal
+// console.log(marco());
+//
+// /*write a function named greeting that takes a name as an argument
+// and returns "Welcome, <person's name here>!" */
+// //write your constants
+// const greeting = (name1) => {
+//   //return the persons name
+//   return ` "Welcome, ${name1}!" `
+// }
+// //Give greeting names to use as console.log();
+// console.log(greeting("Ryan"));
+// console.log(greeting("Alejandro"));
+//
+// // Write a function named oddOrEven that takes a number as an argument and returns whether the number is odd or even.
+// const oddOrEven = (num) => {
+//   // if statement to say if it is to say even
+//   // else statement to say if is odd
+//   if(num % 2 === 0){
+//     return "Even"
+//   } else
+//   return "Odd"
+// }
+// console.log(oddOrEven(42));
+// console.log(oddOrEven(69));
+//
+// //Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
+// const triple = (num) => {
+//   //multiple the return by 3
+//   return (num * 3)
+// }
+// console.log(triple(4));
+//
+// //Write a function named multiply that takes two numbers as arguments and returns the result of one of the numbers multiplied by the other.
+//
+// const multiply = (num1, num2) => {
+//   //these two arguments need to be multiplied by eachother
+//   return num1 * num2
+// }
+// console.log(multiply(4,4));
 
 // Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
 
 
 
-//
+//Write a function named divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5".
+
+
+
+const divisibleBy = (num1, num2) => {
+  //write an if statment in order to determine outcomes
+  if(num1 % num2 === 0){
+    //use interpolation to have both of the arguments to appear
+  return `${num1 } is evenly divisible by ${num2}`
+  // must use else statment to catch the rest of possiblities
+} else {
+  return `${ num1 } is not evenly divisible by ${num2}`
+}
+}
+
+console.log(divisibleBy(10,5));
+console.log(divisibleBy(10,3));
+
+
+//Write a function named assignGrade that takes a number score as an argument and returns the letter grade for the score.
+
+const assignGrade = (grade) => {
+  //must create if statments to differenitate between letter grades
+  //must set ranges
+  if(grade >= 90){
+    return "You got an A"
+  } else if (grade >= 80 && grade < 90) {
+    return "You got a B"
+  } else if (grade >= 70 && grade < 80) {
+    return "Cs get degrees"
+  } else if (grade >= 60 && grade < 70) {
+    return "You almost passed, good effort"
+  } else {
+    return "You suck"
+  }
+}
+
+console.log(assignGrade(92));
+console.log(assignGrade(89));
+console.log(assignGrade(70));
+console.log(assignGrade(66));
+console.log(assignGrade(3));
+console.log(assignGrade(1000));
