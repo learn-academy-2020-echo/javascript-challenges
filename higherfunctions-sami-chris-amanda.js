@@ -89,6 +89,25 @@ console.log(stringFinder(comboArr));
 
 // Expected output --> "jvscrpt s wsm"
 
+let str = "javascript is awesome"
+// make an array of vowels
+let vowels = ['a', 'e', 'i', 'o', 'u']
+
+// Create a function that takes in a string 
+const vowelRemover = (array) => {
+	// create new var that contains function
+	// inside function use filter to go thru array to find if element is string using typeOf
+	// create new var to hold new filtered array
+	// return the variable that holds newly filtered array
+	
+}	// returns a new string with all the vowels removed.
+
+
+
+
+// ************************************************************************************
+
+
 // Create a function that takes in two arrays as arguments returns one array with no duplicate values.
 // var arr1 = [3, 7, 10, 5, 4, 3]
 
