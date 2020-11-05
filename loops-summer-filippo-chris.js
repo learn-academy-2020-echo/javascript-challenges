@@ -54,13 +54,42 @@
 
 // let oddOrEven = 2
 
-const oddOrEven = () => {
-  if oddOrEven %2 ===0
+// const oddOrEven = (number) => {
+//   if (number % 2 === 0){
+//  return "even"
+//   }
+//   else {
+//   return "odd"
+// }
+// }
+//
+// console.log(oddOrEven(9));
 
-} {return "even"}
-  else {
-  return "odd"
-}
-}
+// declare a function named triple that takes a number as an argument
+// multiple the argument by 3
+// return the result of the number in the argument multiplied by 3
+// const triple = (numb) => {
+//   return numb * 3
+// }
+// console.log(triple(10))
 
-console.log(oddOrEven(2));
+
+//declare a function called multiple thats takes 2 numbers as arguments
+//multiply the two arguments by each other
+//return the solution of the two arguments multiplied together
+
+
+// const multiply = (num1, num2) => {
+//   return num1 * num2
+// }
+// console.log(multiply(10,5))
+
+
+//declare a function called divisbleBy thats takes 2 numbers as units
+//determine if the first number is divisble by the second
+//if fist number is evenly divisble return a string that states otherwise
+//if first number if not divisble return string that states this
+
+const divisbleBy = (num1, num2) => {
+  if num1 % num2 === 0
+} return `${num1}`
