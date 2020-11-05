@@ -52,3 +52,21 @@ const upperCase = (string) => {
 }
 
 console.log(upperCase(myMessage));
+
+
+// Write a function that takes in an array of numbers and letters and returns a string with only the letters. HINT: Use typeof method
+// var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"] Expected output --> "nicework"
+
+
+// declare my comboArrr variable
+// define constant and filtering method
+
+var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+
+ const stringOnly = (string) => {
+   return string.typeof(value => {
+
+   })
+ }
+
+console.log(stringOnly(comboArr));
