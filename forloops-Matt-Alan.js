@@ -40,13 +40,14 @@
 // }
 // console.log(oddOrEven(4));
 
-// Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
-const triple = (number) => {
-    if (true) {
-
-    }
-
-}
+// // Write a function named triple that takes a number as an argument and returns the result of that number multiplied by 3.
+// const triple = (number) => {
+//     if (true) {
+//
+//     }
+//
+// }
+//
 
 
 
