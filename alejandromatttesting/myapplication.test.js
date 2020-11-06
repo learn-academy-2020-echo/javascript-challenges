@@ -96,10 +96,15 @@ describe("budget", () =>{
   test("if an item is in our budget of $300", () => {
     // need to know if item is in the budget and what it equals too
     // EXPECTING IS        NOT DEFINED
-    expecting(budget(300)).toEqual("Bought it")
+  var over = 301
+  var under = 280
+  var onPoint = 300
+    expect(budget(onPoint)).toEqual("Bought it")
     // need what is over budget,
     // EXPECTING IS       NOT DEFINED
-    expecting(budget(300)).toEqual("naw, go home")
+    expect(budget(over)).toEqual("naw, go home")
+    // need to add when we have it right on the 300
+    expect(budget(under)).toEqual("Bought it")
   })
 })
 const budget = (money) => {
@@ -109,3 +114,16 @@ const budget = (money) => {
       return "naw, go home"
     }
   }
+
+
+// Write the test for a function called Rick that returns "Morty". Write the function that will make the test pass.
+
+describe("rick", () =>{
+  test("rick returns morty back home", () =>{
+    expect(rick()).toEqual("morty is home")
+  })
+})
+
+const rick = () =>{
+  return "morty is home"
+}
