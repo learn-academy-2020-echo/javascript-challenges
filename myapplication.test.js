@@ -68,10 +68,14 @@
 // write the test (describe, test, expect)
 describe("price", () => {
     test("We are checking our budget and $300 or more is too much, but anything below $300 is within budget", () =>{
-            expect(price(money < 300)).toEqual("in budget")
-            expect(price(money >= 300)).toEqual("way too much money!")
-            expect(price(anything)).toEqual("you even have money?")
-
+      var pizza = 10
+            expect(price(250)).toEqual("in budget")
+            expect(price(pizza)).toEqual("in budget")
+            expect(price(300)).toEqual("way too much money!")
+            expect(price(310)).toEqual("way too much money!")
+            expect(price("anything")).toEqual("you even have money?")
+      })
+})
 // write const that displays "in Budget" if price is < $300
 
 const price = (money) => {
@@ -83,4 +87,3 @@ const price = (money) => {
     return "you even have money?"
   }
 }
-// somewords here
