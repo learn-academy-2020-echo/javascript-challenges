@@ -95,8 +95,3 @@ var charsReversed = chars.reverse();
 console.log(charsReversed);
 console.log(chars.join("-"));
 console.log(chars.join(""));
-
-
-
-
-
