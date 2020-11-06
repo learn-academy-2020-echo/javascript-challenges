@@ -1,25 +1,55 @@
 // Write the test for a function that returns "drink coffee" if you are tired and "keep working" if you are not tired. Write the function that will make the test pass.
 
-describe('needCoffee', () => {
-	test("Takes in a string arguments and returns back either 'drink coffee' or 'keep working'", () => {
-		expect(needCoffee('tired')).toEqual('drink coffee')
-		expect(needCoffee('not tired')).toEqual('keep coding')
-	})
-})
+// describe('needCoffee', () => {
+// 	test("Takes in a string arguments and returns back either 'drink coffee' or 'keep working'", () => {
+// 		expect(needCoffee('tired')).toEqual('drink coffee')
+// 		expect(needCoffee('not tired')).toEqual('keep coding')
+// 	})
+// })
+//
+// const needCoffee = (string) => {
+// 	if (string === 'tired') {
+// 		return 'drink coffee'
+// 	} else if (string === 'not tired') {
+// 		return 'keep coding'
+// 	} else {
+// 		return 'something went wrong'
+// 	}
+// }
 
-const needCoffee = (string) => {
-	if (string === 'tired') {
-		return 'drink coffee'
-	} else if (string === 'not tired') {
-		return 'keep coding'
-	} else {
-		return 'something went wrong'
-	}
-}
+//****************************
 
 // Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed. Write the function that will make the test pass.
 
+// describe("areStressed", () => {
+// 	test("string argument and returns back 'relax' or 'keep going'", () =>{
+// 		expect(areStressed("yes")).toEqual("relax")
+// 		expect(areStressed("no")).toEqual("keep going")
+// 	})
+// })
+//
+// const areStressed = (string) => {
+// 	if (string === "yes"){
+// 		return "relax"
+// 	} else if (string === "no") {
+// 		return "keep going"
+// 	}else {
+// 		return "something went wrong"
+// 	}
+// }
+
+
 // Write the test for a function that returns "in budget" if a price is lower than $300. Write the function that will make the test pass.
+
+describe("budget", () => {
+	test("accepts a number argument if number is below $300 will return 'in budget'otherwise return over budget", () => {
+		expect(budget(30)).toEqual("in budget")
+		expect(budget(500)).toEqual("over budget")
+		expect(budget(300)).toEqual("over budget")
+	})
+})
+
+
 
 // Write the test for a function that takes in two arguments(numbers) and returns the smaller number. Write the function that will make the test pass.
 
