@@ -70,3 +70,42 @@ const coffee1 = (energy) => {
 
 
 //Write the test for a function that returns "relax" if you are stressed and "keep going" if you are not stressed. Write the function that will make the test pass.
+
+describe("stressing", () => {
+  test("it takes the argument of being stressed and returns that you should relax", () => {
+    expect(stressing("stressed")).toEqual("Take a breath")
+    expect(stressing("relaxed")).toEqual("Keep on keeping on")
+  }
+)
+}
+)
+
+
+const stressing = (energy) => {
+  if(energy === "stressed"){
+    return "Take a breath"
+  } else if(energy === "relaxed"){
+    return "Keep on keeping on"
+  }
+}
+
+// Write the test for a function that returns "in budget" if a price is lower than $300. Write the function that will make the test pass.
+
+
+describe("budget", () =>{
+  test("if an item is in our budget of $300", () => {
+    // need to know if item is in the budget and what it equals too
+    // EXPECTING IS        NOT DEFINED
+    expecting(budget(300)).toEqual("Bought it")
+    // need what is over budget,
+    // EXPECTING IS       NOT DEFINED
+    expecting(budget(300)).toEqual("naw, go home")
+  })
+})
+const budget = (money) => {
+  if (money <= 300){
+    return "Bought it"
+  }else if (money > 300) {
+      return "naw, go home"
+    }
+  }
