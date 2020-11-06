@@ -34,15 +34,19 @@
 
 
 
-var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
-//declare a function that takes an array as an argument
-//return a higher-order function that takes in the values
-//return a string with only the letters
-const returnString = (array) => {
-  return array.filter(value => {
-    if(typeof value === "string"){
-      return value
-    }
-  }).join("")
-}
-console.log(returnString(comboArr))
+// var comboArr = [7, "n", "i", "c", 10, "e", false, "w", 3, "o", "r", "k"]
+// //declare a function that takes an array as an argument
+// //return a higher-order function that takes in the values
+// //return a string with only the letters
+// const returnString = (array) => {
+//   return array.filter(value => {
+//     if(typeof value === "string"){
+//       return value
+//     }
+//   }).join("")
+// }
+// console.log(returnString(comboArr))
+
+
+
+
