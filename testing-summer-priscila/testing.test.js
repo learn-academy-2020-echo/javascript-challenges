@@ -2,9 +2,9 @@
 
 describe("shouldIDrinkCoffee" , () => {
     test("return a string that says whether you should drink coffee" , () => {
-        expect(shouldIDrinkCoffee("Not tired").toEqual("Keep working")
-        expect(shouldIDrinkCoffee("tired").toEqual("drink coffee")
-        expect(shouldIDrinkCoffee(true).toEqual("something went wrong")
+        expect(shouldIDrinkCoffee("Not tired")).toEqual("Keep working")
+        expect(shouldIDrinkCoffee("tired")).toEqual("drink coffee")
+        expect(shouldIDrinkCoffee(true)).toEqual("something went wrong")
         
     })
 })
@@ -15,5 +15,6 @@ const shouldIDrinkCoffee = (energy) => {
         return "Keep working"
 } else if (energy === "tired") {
     return "drink coffee"
-} else "something went wrong"
+} else (energy === true) 
+    return "something went wrong"
 }
