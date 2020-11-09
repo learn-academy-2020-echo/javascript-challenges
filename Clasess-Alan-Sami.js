@@ -74,11 +74,33 @@
 //
 // Write the code that makes a double shot hazelnut latte with almond milk. Then, log the latte's profile.
 //
+
+
+
+
 // Volume of a Cylinder
 
 
-
-
-// Write a class that calculates the volume of a Cylinder to four decimal places. Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)
-//
+// Write a class that calculates the volume of a Cylinder to four decimal places. Volume of a cylinder :
+// V = πr2h (r is the radius and h is the height of the cylinder)
 // Write the code that creates three unique cylinder objects
+
+class Cyclinder {
+    constructor(radius, height){
+        this.radius = radius
+        this.height = height
+    }
+    cylinderProfile(){
+        return `The cylinder volume is equal to ${(this.radius * this.height * 3.14).toFixed(4)}`
+    }
+}
+
+
+var cylinder1 = new Cyclinder(2,3)
+var cylinder2 = new Cyclinder(4,5)
+var cylinder3 = new Cyclinder(6,7)
+
+console.log(cylinder1.cylinderProfile());
+console.log(cylinder2.cylinderProfile());
+console.log(cylinder3.cylinderProfile());
+
