@@ -76,3 +76,26 @@ console.log(regular.latteProfile());
 
 var fancyLatte = new Latte("hazelnut", "almond",2)
 console.log(fancyLatte.latteProfile());
+
+
+// 3 Volume of a Cylinder
+// Write a class that calculates the volume of a Cylinder to four decimal places.
+// Volume of a cylinder : V = πr2h (r is the radius and h is the height of the cylinder)
+
+class Volcylinder {
+  constructor(radius, height ){
+    this.radius = radius
+    this.height = height
+
+
+  }
+
+  volcylinderProfile(){
+    return (Math.pow(this.radius, 2)*this.height*3.14159265359).toFixed([4])
+  }
+}
+
+  var cyl1 = new Volcylinder(5, 10)
+  console.log(cyl1.volcylinderProfile());
+
+  console.log(25*10*3.14159265359);
