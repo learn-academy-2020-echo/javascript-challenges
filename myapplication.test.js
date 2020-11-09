@@ -62,7 +62,8 @@ describe("price", () => {
             expect(price(money < 300)).toEqual("in budget")
             expect(price(money >= 300)).toEqual("way too much money!")
             expect(price(anything)).toEqual("you even have money?")
-
+})
+})
 // write const that displays "in Budget" if price is < $300
 
 const price = (money) => {
