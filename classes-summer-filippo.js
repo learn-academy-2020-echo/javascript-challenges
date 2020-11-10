@@ -101,11 +101,18 @@ class Volcylinder {
   console.log(25*10*3.14159265359);
 
 class Car {
-  constructor(model, year, wheels){
+  constructor(model, year, wheels, lights){
     this.model = model
     this.year = year
     this.wheels = 4
-  }
+    this.lights = lights
+    }
+    lightsOn(){
+      this.lights = on
+    }
+    lightsOff(){
+      this.lights = off
+    }
 }
 
 class Tesla extends Car {
@@ -118,6 +125,11 @@ class Toyota extends Car {
     super(model, year)
   }
 }
+class Volkswagen extends Car {
+    constructor(model, year){
+      super(model, year)
+}
+}
 
 var myCar = new Car("generic car", "myCar year")
 console.log(myCar.wheels)
@@ -127,3 +139,7 @@ console.log(myTesla)
 
 var myToyota = new Toyota("rav 4", 2008)
 console.log(myToyota)
+
+let bulb = new Car()
+bulb.lightsOn()
+console.log("lights", bulb.lights);
