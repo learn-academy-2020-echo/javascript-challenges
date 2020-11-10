@@ -99,3 +99,31 @@ class Volcylinder {
   console.log(cyl1.volcylinderProfile());
 
   console.log(25*10*3.14159265359);
+
+class Car {
+  constructor(model, year, wheels){
+    this.model = model
+    this.year = year
+    this.wheels = 4
+  }
+}
+
+class Tesla extends Car {
+  constructor(model, year){
+    super(model, year)
+  }
+}
+class Toyota extends Car {
+  constructor(model, year){
+    super(model, year)
+  }
+}
+
+var myCar = new Car("generic car", "myCar year")
+console.log(myCar.wheels)
+
+var myTesla = new Tesla("model 3", 2020)
+console.log(myTesla)
+
+var myToyota = new Toyota("rav 4", 2008)
+console.log(myToyota)
