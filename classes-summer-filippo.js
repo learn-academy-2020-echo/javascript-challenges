@@ -101,23 +101,33 @@ class Volcylinder {
   console.log(25*10*3.14159265359);
 
 class Car {
-  constructor(model, year, wheels, lights){
+  constructor(model, year){
     this.model = model
     this.year = year
     this.wheels = 4
-    this.lights = lights
+    this.lights = "off"
+    this.signal = "off"
+    this.speed = 0
     }
-    lightsOn(){
-      this.lights = on
-    }
-    lightsOff(){
-      this.lights = off
-    }
+  lightsOn(){
+    this.lights = "on"
+  }
+  signalOn(){
+    this.signal = "on"
+  }
+  carInfo(){
+    return `This car is a ${this.year} ${this.model}. It has ${this.wheels} wheels, it's lights are ${this.lights} and its signals are ${this.signal}. It's current speed is ${this.speed}mph.`
+  }
 }
-
 class Tesla extends Car {
   constructor(model, year){
     super(model, year)
+  }
+  accelerate(){
+    this.speed += 10
+  }
+  deccelerate(){
+    this.speed -= 7
   }
 }
 class Toyota extends Car {
@@ -131,15 +141,41 @@ class Volkswagen extends Car {
 }
 }
 
-var myCar = new Car("generic car", "myCar year")
-console.log(myCar.wheels)
+// var myCar = new Car("generic car", "myCar year")
+// //shows the lights being off
+// console.log(myCar.lights)
+// //turns the lights on
+// myCar.lightsOn()
+// //shows the lights being on
+// console.log(myCar.lights)
 
 var myTesla = new Tesla("model 3", 2020)
 console.log(myTesla)
 
-var myToyota = new Toyota("rav 4", 2008)
-console.log(myToyota)
+//shows the lights being off
+console.log(myTesla.lights)
+//turns the lights on
+myTesla.lightsOn()
+//shows the lights being on
+console.log(myTesla.lights)
+//logs all the info about the Tesla with the lights on
+console.log(myTesla)
+//shows the default speed of the Tesla to be 0
+console.log(myTesla.speed)
+//speeds up the Tesla by 10
+myTesla.accelerate()
+//shows the faster Tesla
+console.log(myTesla)
+//slows the Tesla down by 7
+myTesla.deccelerate()
+//shows the slower Tesla
+console.log(myTesla)
+//will show the long ass message about the car
+console.log(myTesla.carInfo())
 
-let bulb = new Car()
-bulb.lightsOn()
-console.log("lights", bulb.lights);
+
+// var myToyota = new Toyota("rav 4", 2008)
+// console.log(myToyota)
+//
+// var carWithLightsOff = new Car("model", 2020)
+// console.log(carWithLightsOff)
