@@ -24,10 +24,10 @@ As a user, I can see a Footer component with the names of you and your partner -
     class App extends React.Component{
       render(){
         return(
-           <> 
+           <>
         <Header/>
         <Content />
-           
+        <Footer />
          </>
         )
       }
@@ -62,6 +62,16 @@ As a user, I can see a Footer component with the names of you and your partner -
           )
         }
       }
+class Footer extends React.Component {
+  render(){
+      return(
+      <>
+      <h10> Alan,Sami,Priscila </h10>
+      </>
+      )
+  }
+}
+
 
     const domContainer = document.querySelector('#react-container')
     ReactDOM.render(<App />, domContainer)
