@@ -76,7 +76,7 @@ class LatteMaker {
       if(this.flavors = "" ) {
         return `${this.flavors}`
       }
-  } 
+  }
   milkTypes() {
     if(this.milkType = "" ) {
       return `${this.milkTypes}`
@@ -85,14 +85,14 @@ class LatteMaker {
     numShots() {
       if(this.shots > 1) {
         return `${this.shots} shots`
-      
+
       } else {
         return `${this.shots} shot`
       }
     }
   }
 
- 
+
 var hazelnut = new LatteMaker("hazelnut", "almond milk", 2)
 
 console.log(hazelnut);
