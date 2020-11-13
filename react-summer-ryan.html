@@ -1,0 +1,63 @@
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+  <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <title>Intro to React</title>
+
+</head>
+<body>
+
+  <div id="react-container"></div>
+
+  <script type="text/babel">
+    class App extends React.Component{
+      render(){
+        return(
+          <div>
+            <h1>Hello React!</h1>
+            <h2>Echo 2020</h2>
+            <ClassMates />
+            <TeamMate />
+          </div>
+        )
+      }
+    }
+    class ClassMates extends React.Component{
+      render(){
+        return(
+        <div>
+          <ul>
+            <li>Summer</li>
+            <li>Ryan</li>
+            <li>Filippo</li>
+            <li>Sami</li>
+            <li>Pricsila</li>
+            <li>Matt</li>
+            <li>Alejandro</li>
+            <li>Chris</li>
+            <li>Amanda</li>
+            <li>Raul</li>
+            <li>Alan</li>
+          </ul>
+        </div>
+        )
+      }
+    }
+    class TeamMate extends React.Component{
+      render(){
+        return(
+        <footer> Summer & Ryan </footer>
+        )
+      }
+    }
+
+    const domContainer = document.querySelector('#react-container')
+    ReactDOM.render(<App />, domContainer)
+  </script>
+</body>
+</html>
