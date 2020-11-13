@@ -1,15 +1,48 @@
 *{
   background-color: grey;
 }
-.whitesquare {
+.white {
   background-color: white;
   height: 200px;
   width: 200px;
   margin: 20px;
 }
 
-.bluesquare {
+.blue {
   background-color: blue;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+.green {
+  background-color: green;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+
+.yellow {
+  background-color: yellow;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+.red {
+  background-color: red;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+
+.purple {
+  background-color: purple;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+
+.orange {
+  background-color: orange;
   height: 200px;
   width: 200px;
   margin: 20px;
