@@ -6,5 +6,5 @@ const removeNums = (nums1) => {
 
 
 
-var comboArr = comboArr.join("nice")
+var comboArr = comboArr.join("")
 console.log(removeNums(comboArr));

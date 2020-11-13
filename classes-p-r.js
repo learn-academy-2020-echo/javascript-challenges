@@ -62,37 +62,87 @@ Write the code that makes a coffee with 2 sugars. Then write the code that outpu
 // Write the code that makes a regular, single shot latte. Then, log the latte's profile.
 
 // Write the code that makes a double shot hazelnut latte with almond milk. Then, log the latte's profile.
-
-class LatteMaker {
-  constructor(flavor, milkType, shots) {
-    this.flavors = flavor
-    this.milkTypes = milkType
-    this.shots = shots
+//
+// class LatteMaker {
+//   constructor(flavor, milkType, shots) {
+//     this.flavors = flavor
+//     this.milkTypes = milkType
+//     this.shots = shots
+//   }
+//   latteProfile() {
+//     return (`${this.flavors}: ${this.milkTypes}: ${this.shots}`)
+//   }
+//      flavorTypes() {
+//       if(this.flavors = "" ) {
+//         return `${this.flavors}`
+//       }
+//   }
+//   milkTypes() {
+//     if(this.milkType = "" ) {
+//       return `${this.milkTypes}`
+//     }
+//   }
+//     numShots() {
+//       if(this.shots > 1) {
+//         return `${this.shots} shots`
+//
+//       } else {
+//         return `${this.shots} shot`
+//       }
+//     }
+//   }
+//
+//
+// var hazelnut = new LatteMaker("hazelnut", "almond milk", 2)
+//
+// console.log(hazelnut);
+// we built a model for an engine
+class Car {
+  constructor(){
+    this.model = "generic car"
+    this.year = "myCar year"
+    this.oilLevel = 100
+    this.rpm = 0
   }
-  latteProfile() {
-    return (`${this.flavors}: ${this.milkTypes}: ${this.shots}`)
-  }
-     flavorTypes() {
-      if(this.flavors = "" ) {
-        return `${this.flavors}`
-      }
-  }
-  milkTypes() {
-    if(this.milkType = "" ) {
-      return `${this.milkTypes}`
-    }
-  }
-    numShots() {
-      if(this.shots > 1) {
-        return `${this.shots} shots`
 
-      } else {
-        return `${this.shots} shot`
-      }
-    }
+  start(){
+    this.rpm = 500
   }
 
+  stop(){
+    this.rpm = 0
+  }
 
-var hazelnut = new LatteMaker("hazelnut", "almond milk", 2)
+  wheels(){
+    return 4
+  }
+}
 
-console.log(hazelnut);
+class Tesla extends Car {
+  constructor(){
+    super()
+    //we can now model a tesla how we want!
+
+  }
+}
+// class Maserati extends Car {
+//   constructor(){
+//     super()
+//   }
+// }
+var myCar = new Car()
+var teslaCar = new Tesla
+console.log(teslaCar)
+console.log(myCar);
+
+
+// let engine = new Engine()
+//
+// console.log("rpm:", engine.rpm)
+// console.log();
+// // call the method start on the engine object variable to alter the rpm
+// engine.start()
+// console.log("rpm:", engine.rpm)
+//
+// engine.stop()
+// console.log("rpm:", engine.rpm)

@@ -41,17 +41,46 @@
 
 // Write the test for a function that returns "in budget" if a price is lower than $300. Write the function that will make the test pass.
 
-describe("budget", () => {
-	test("accepts a number argument if number is below $300 will return 'in budget'otherwise return over budget", () => {
-		expect(budget(30)).toEqual("in budget")
-		expect(budget(500)).toEqual("over budget")
-		expect(budget(300)).toEqual("over budget")
-	})
-})
+// describe("budget", () => {
+// 	test("accepts a number argument if number is below $300 will return 'in budget'otherwise return over budget", () => {
+// 		expect(budget(30)).toEqual("in budget")
+// 		expect(budget(500)).toEqual("over budget")
+// 		expect(budget(350)).toEqual("over budget")
+// 		expect(budget("hello")).toEqual("error")
+// 	})
+// })
+
+// const budget = (num) => {
+// 	if(num < 300){
+// 		return "in budget"
+// 	} else if(num > 300){
+// 		return "over budget"
+// 	} else {
+// 		return "error"
+// 	}
+// }
 
 
 
 // Write the test for a function that takes in two arguments(numbers) and returns the smaller number. Write the function that will make the test pass.
+
+describe("smallNum", () => {
+	test("take in two numbers and return the small number", () =>{
+		expect(smallNum(20, 30)).toEqual(20)
+		expect(smallNum(100, 30)).toEqual(30)
+		expect(smallNum(20, 20)).toEqual("equal")
+	})
+})
+
+const smallNum = (num1, num2) => {
+	if(num1 < num2){
+		return num1
+	}else if (num1 == num2){
+		return "equal"
+	}else{
+		return num2
+	}
+}
 
 // Write the test for a function that takes in one argument(number) and returns whether the number is odd. Write the function that will make the test pass.
 
@@ -70,3 +99,4 @@ describe("budget", () => {
 // Write the test for a function called divisibleBy that takes two numbers as arguments and returns whether the first number is evenly divisible by the second so that divisibleBy(10, 5) logs "10 is evenly divisible by 5". Write the function that will make the test pass.
 
 // Write the test for a function called fizzbuzz. If a number is a multiple of 3, replace it with the word 'fizz'. If a number is a multiple of five, replace it with the word 'buzz'. If a number is a multiple of both 3 and 5, replace it with 'fizzbuzz'. Write the function that will make the test pass.
+
