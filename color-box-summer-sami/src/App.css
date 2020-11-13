@@ -1,0 +1,16 @@
+*{
+  background-color: grey;
+}
+.whitesquare {
+  background-color: white;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
+
+.bluesquare {
+  background-color: blue;
+  height: 200px;
+  width: 200px;
+  margin: 20px;
+}
