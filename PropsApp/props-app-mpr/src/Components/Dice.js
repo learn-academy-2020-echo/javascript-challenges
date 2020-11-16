@@ -4,7 +4,7 @@ class Dice extends Component{
   render() {
     return(
       <div>
-      { Math.random(this.props.name) }
+      { Math.floor(Math.random() * {this.props.diceroll} ) }
       <button onClick={this.props.roll}>
       click me!!!
       </button>
