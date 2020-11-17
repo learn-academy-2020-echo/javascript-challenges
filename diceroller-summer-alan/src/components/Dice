@@ -1,0 +1,26 @@
+import React, { Component } from 'react'
+
+class Dice extends Component {
+
+//in the render, create a button that is a big square to represent the dice that we will be rolling.
+//use props to call the method from the app.js file on the click.
+
+  render(){
+    return(
+      <div>
+      <button
+        style= {
+          width: '300px';
+          height: '300px';
+          fontSize: '50px';
+        }
+      onClick= { this.props.roll }>
+        {this.currentNumber}
+      </button>
+      <h2> Click Box to Roll </h2>
+        </div>
+    )
+  }
+}
+
+export default Dice
