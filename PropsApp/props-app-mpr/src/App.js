@@ -10,18 +10,19 @@ class  App extends Component {
     this.state= {
       dice: [1, 2, 3, 4, 5, 6] ,
       roll: 0 ,
-      diceRoll: []
+      output: []
     }
 }
 
-  diceRoll = (input) => {
+
     //when declaring variables in react
   }
 
   render(){
     return (
       <div>
-      <Dice diceroll={this.state.dice}/ >
+      { }
+      <Dice diceNumbers={this.state.dice}/ >
       </div>
     )
   }
